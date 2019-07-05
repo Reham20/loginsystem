@@ -14,7 +14,7 @@
       <nav>
         <!-- Logo -->
         <a href="index.php">
-          <img src="imgs/logo.png" alt="logo" />
+          <img src="imgs/logo.png.png"/>
         </a>
         <ul>
           <li><a href="index.php">Home</a></li>
@@ -35,5 +35,7 @@
           <form class="signout-f" action="includes/logout.inc.php" method="post">
               <button type="submit" name="logoutsub">Logout</button>
           </form>
+
         </div>
+
     </header>
