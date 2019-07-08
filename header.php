@@ -19,10 +19,11 @@
         <ul>
           <li><a href="index.php">Home</a></li>
           <li><a href="#">Portfolio</a></li>
-          <li><a href="#">AboutMe</a></li>
+          <li><a href="#">About Me</a></li>
         <ul>
       </nav>
         <!-- Login Form -->
+        
         <div class="header-login">
           <form class="login-f" method="post" action="#">
             <input type="text" name="userin" placeholder="Username Or E-mail" minlength="6" maxlength="20" required>
