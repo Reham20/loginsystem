@@ -1,431 +1,472 @@
 /* STYLE */
 
-*{
-  box-sizing: border-box;
-  font-family:Courier New;
-  padding:0;
-  margin:0;
+* {
+    box-sizing: border-box;
+    font-family: Courier New;
+    padding: 0;
+    margin: 0;
 }
-html, body {
-  height: 100%;
+
+html,
+body {
+    height: 100%;
 }
+
 main {
-  min-height: 100%;
-  margin-bottom: -50px;
+    min-height: 100%;
+    margin-bottom: -50px;
 }
+
+
 /* Start Design */
+
 nav a img {
-  transition:transform 0.3s ease-in;
-  width: 75px;
-  max-width:75px;
-  margin-left:5px;
+    transition: transform 0.3s ease-in;
+    width: 75px;
+    max-width: 75px;
+    margin-left: 5px;
 }
-nav a img:hover{
-  transform:rotate(360deg);
+
+nav a img:hover {
+    transform: rotate(360deg);
 }
+
 nav {
-  display:flex;
-  flex-wrap:wrap;
-  align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-
-
-
-}
 header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:space-between;
-  background: #f5f6fa;
-  align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #f5f6fa;
+    align-items: center;
 }
+
 .header-login {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
+
 .login-f {
-  margin: 0px 5px;
+    margin: 0px 5px;
 }
+
 .login-f button {
-  background: white;
-  border: 0px;
-  border-left:6px solid #7f8fa6;
-  width: 85px;
-  height: 35px;
-  font-weight: bold;
-  cursor: pointer;
-  text-align: center;
-  border-radius:3px;
-  position: relative;
-  overflow: hidden;
-  transform:translateZ(0px);
-}
-.login-f button:before {
-  content: "";
-  transition:right 0.3s ease-out;
-  background:#7f8fa6;
-  height: 50px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 100%;
-  z-index:-1;
-}
-.login-f input {
-  width: 175px;
-  border: 0px;
-  border-top:4px solid #3c6382;
-  border-radius: 3px;
-  height:35px;
-  padding:4px;
-  text-align: center;
-  background: white;
-}
-.login-f button:hover:before{
-  right:0;
-}
-.login-f button:hover{
-  color:white;
-}
-.signout-f button{
     background: white;
-  border: 0px;
-  border-left:6px solid #7f8fa6;
-  width: 85px;
-  height: 35px;
-  font-weight: bold;
-  cursor: pointer;
-  text-align: center;
-  border-radius:3px;
-  position: relative;
-  overflow: hidden;
-  transform:translateZ(0px);
+    border: 0px;
+    border-left: 6px solid #7f8fa6;
+    width: 85px;
+    height: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+    transform: translateZ(0px);
 }
+
+.login-f button:before {
+    content: "";
+    transition: right 0.3s ease-out;
+    background: #7f8fa6;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    z-index: -1;
+}
+
+.login-f input {
+    width: 175px;
+    border: 0px;
+    border-top: 4px solid #3c6382;
+    border-radius: 3px;
+    height: 35px;
+    padding: 4px;
+    text-align: center;
+    background: white;
+}
+
+.login-f button:hover:before {
+    right: 0;
+}
+
+.login-f button:hover {
+    color: white;
+}
+
+.signout-f button {
+    background: white;
+    border: 0px;
+    border-left: 6px solid #7f8fa6;
+    width: 85px;
+    height: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+    transform: translateZ(0px);
+}
+
 .signout-f button:before {
-  content: "";
-  transition:right 0.3s ease-out;
-  background:#7f8fa6;
-  height: 50px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 100%;
-  z-index:-1;
+    content: "";
+    transition: right 0.3s ease-out;
+    background: #7f8fa6;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    z-index: -1;
 }
-.signout-f button:hover:before{
-  right:0;
+
+.signout-f button:hover:before {
+    right: 0;
 }
-.signout-f button:hover{
-  color:white;
+
+.signout-f button:hover {
+    color: white;
 }
+
 .signup-l {
-  background:#3c6382;
-  color:snow;
-  width: 80px;
-  text-align: center;
-  font-weight: bold;
-  border: 6px solid #3c6382;
-  border-radius: 3px;
-  cursor: pointer;
-  height: 30px;
-  text-decoration:none;
-  margin:0px 5px;
-  transition:all 0.3s  ease-in-out;
+    background: #3c6382;
+    color: snow;
+    width: 80px;
+    text-align: center;
+    font-weight: bold;
+    border: 6px solid #3c6382;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 30px;
+    text-decoration: none;
+    margin: 0px 5px;
+    transition: all 0.3s ease-in-out;
 }
+
 .signup-l:hover {
-  background:black;
-  border:6px solid black;
-  color: white;
-  box-shadow: 0px 0px 4px #080808;
+    background: black;
+    border: 6px solid black;
+    color: white;
+    box-shadow: 0px 0px 4px #080808;
 }
+
 .main-div {
-  text-align: center;
-  width: 550px;
-  margin: 60px auto;
+    text-align: center;
+    width: 550px;
+    margin: 60px auto;
 }
-.main-div p{
-  color: #ecf0f1;
-  background: #2d2d2d;
-  height: 35px;
-  padding: 8px;
-  font-weight: bold;
-  border-radius: 5px;
-  box-shadow: 1px 0.5px 6px #2c3e50;
+
+.main-div p {
+    color: #ecf0f1;
+    background: #2d2d2d;
+    height: 35px;
+    padding: 8px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 1px 0.5px 6px #2c3e50;
 }
 
 .container {
-  padding: 20px;
-  text-align: center;
-  color: #34495E;
+    padding: 20px;
+    text-align: center;
+    color: #34495E;
 }
 
 .main-div form input {
-  width: 300px;
-  padding: 15px;
-  margin:8px 0px;
-  border: none; 
-   background: green;
-
+    width: 300px;
+    padding: 15px;
+    margin: 8px 0px;
+    border: none;
+    background: green;
 }
+
 label {
-  color: #34495E;
-
-
-
+    color: #34495E;
 }
-
-
-
-
 
 .registerbtn {
-  background-color: #95A5A6;
-  color: white;
-  padding: 10px ;
-  margin: 20% ;
-  border: none;
-  cursor: pointer;
-  width: 20%;
-  
+    background-color: #95A5A6;
+    color: white;
+    padding: 10px;
+    margin: 20%;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background: #222222;
+    width: 100%;
+    text-align: center;
+    color: snow;
+    font-weight: bold;
+    height: 50px;
 }
 
 
-footer{
-  display: flex;
-  justify-content:center;
-  background: #222222;
-  width: 100%;
-  text-align: center;
-  color:snow;
-  font-weight: bold;
-  height: 50px;
-}
 /* STYLE */
-*{
-  box-sizing: border-box;
-  font-family:Courier New;
-  padding:0;
-  margin:0;
+
+* {
+    box-sizing: border-box;
+    font-family: Courier New;
+    padding: 0;
+    margin: 0;
 }
-html, body {
-  height: 100%;
+
+html,
+body {
+    height: 100%;
 }
+
 main {
-  min-height: 100%;
-  margin-bottom: -50px;
+    min-height: 100%;
+    margin-bottom: -50px;
 }
+
+
 /* Start Design */
+
 nav a img {
-  transition:transform 0.3s ease-in;
-  width: 75px;
-  max-width:75px;
-  margin-left:5px;
+    transition: transform 0.3s ease-in;
+    width: 75px;
+    max-width: 75px;
+    margin-left: 5px;
 }
-nav a img:hover{
-  transform:rotate(360deg);
+
+nav a img:hover {
+    transform: rotate(360deg);
 }
+
 nav {
-  display:flex;
-  flex-wrap:wrap;
-  align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
-ul{
-  display:flex;
-  flex-wrap: wrap;
-  margin:0px 20px;
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 20px;
 }
+
 ul li {
-  list-style:none;
-  padding:8px;
-  margin:0px 4px;
-  height:auto;
-  border-radius:4px;
-  width: 120px;
-  max-width: 100%;
-  text-align: center;
-  font-weight: bold;
+    list-style: none;
+    padding: 8px;
+    margin: 0px 4px;
+    height: auto;
+    border-radius: 4px;
+    width: 120px;
+    max-width: 100%;
+    text-align: center;
+    font-weight: bold;
 }
-ul li a{
-  text-decoration: none;
-  color:#2f3640;
+
+ul li a {
+    text-decoration: none;
+    color: #2f3640;
 }
+
 ul li a:hover {
-  color:#dcdde1;
+    color: #dcdde1;
 }
+
 ul li:hover {
-  background: black;
-  box-shadow: 0px 0px 5px #080808;
+    background: black;
+    box-shadow: 0px 0px 5px #080808;
 }
+
 header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:space-between;
-  background: #f5f6fa;
-  align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #f5f6fa;
+    align-items: center;
 }
+
 .header-login {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
+
 .login-f {
-  margin: 0px 5px;
+    margin: 0px 5px;
 }
+
 .login-f button {
-  background: white;
-  border: 0px;
-  border-left:6px solid #7f8fa6;
-  width: 85px;
-  height: 35px;
-  font-weight: bold;
-  cursor: pointer;
-  text-align: center;
-  border-radius:3px;
-  position: relative;
-  overflow: hidden;
-  transform:translateZ(0px);
-}
-.login-f button:before {
-  content: "";
-  transition:right 0.3s ease-out;
-  background:#7f8fa6;
-  height: 50px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 100%;
-  z-index:-1;
-}
-.login-f input {
-  width: 175px;
-  border: 0px;
-  border-top:4px solid #3c6382;
-  border-radius: 3px;
-  height:35px;
-  padding:4px;
-  text-align: center;
-  background: white;
-}
-.login-f button:hover:before{
-  right:0;
-}
-.login-f button:hover{
-  color:white;
-}
-.signout-f button{
     background: white;
-  border: 0px;
-  border-left:6px solid #7f8fa6;
-  width: 85px;
-  height: 35px;
-  font-weight: bold;
-  cursor: pointer;
-  text-align: center;
-  border-radius:3px;
-  position: relative;
-  overflow: hidden;
-  transform:translateZ(0px);
+    border: 0px;
+    border-left: 6px solid #7f8fa6;
+    width: 85px;
+    height: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+    transform: translateZ(0px);
 }
+
+.login-f button:before {
+    content: "";
+    transition: right 0.3s ease-out;
+    background: #7f8fa6;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    z-index: -1;
+}
+
+.login-f input {
+    width: 175px;
+    border: 0px;
+    border-top: 4px solid #3c6382;
+    border-radius: 3px;
+    height: 35px;
+    padding: 4px;
+    text-align: center;
+    background: white;
+}
+
+.login-f button:hover:before {
+    right: 0;
+}
+
+.login-f button:hover {
+    color: white;
+}
+
+.signout-f button {
+    background: white;
+    border: 0px;
+    border-left: 6px solid #7f8fa6;
+    width: 85px;
+    height: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+    transform: translateZ(0px);
+}
+
 .signout-f button:before {
-  content: "";
-  transition:right 0.3s ease-out;
-  background:#7f8fa6;
-  height: 50px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 100%;
-  z-index:-1;
+    content: "";
+    transition: right 0.3s ease-out;
+    background: #7f8fa6;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    z-index: -1;
 }
-.signout-f button:hover:before{
-  right:0;
+
+.signout-f button:hover:before {
+    right: 0;
 }
-.signout-f button:hover{
-  color:white;
+
+.signout-f button:hover {
+    color: white;
 }
+
 .signup-l {
-  background:#3c6382;
-  color:snow;
-  width: 80px;
-  text-align: center;
-  font-weight: bold;
-  border: 6px solid #3c6382;
-  border-radius: 3px;
-  cursor: pointer;
-  height: 30px;
-  text-decoration:none;
-  margin:0px 5px;
-  transition:all 0.3s  ease-in-out;
+    background: #3c6382;
+    color: snow;
+    width: 80px;
+    text-align: center;
+    font-weight: bold;
+    border: 6px solid #3c6382;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 30px;
+    text-decoration: none;
+    margin: 0px 5px;
+    transition: all 0.3s ease-in-out;
 }
+
 .signup-l:hover {
-  background:black;
-  border:6px solid black;
-  color: white;
-  box-shadow: 0px 0px 4px #080808;
+    background: black;
+    border: 6px solid black;
+    color: white;
+    box-shadow: 0px 0px 4px #080808;
 }
+
 .main-div {
-  text-align: center;
-  width: 550px;
-  margin: 60px auto;
+    text-align: center;
+    width: 550px;
+    margin: 60px auto;
 }
-.main-div p{
-  color: #ecf0f1;
-  background: #2d2d2d;
-  height: 35px;
-  padding: 8px;
-  font-weight: bold;
-  border-radius: 5px;
-  box-shadow: 1px 0.5px 6px #2c3e50;
+
+.main-div p {
+    color: #ecf0f1;
+    background: #2d2d2d;
+    height: 35px;
+    padding: 8px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 1px 0.5px 6px #2c3e50;
 }
 
 hr {
-  padding: 10px;
-  text-align: center;
-  color: #34495E;
+    padding: 10px;
+    text-align: center;
+    color: #34495E;
 }
 
 .main-div form input {
-  width: 300px;
-  padding: 15px;
-  margin:8px 0px;
-  border: none; 
-   background: #ECF0F1;
-
+    width: 300px;
+    padding: 15px;
+    margin: 8px 0px;
+    border: none;
+    background: #ECF0F1;
 }
+
 label {
-  color: #34495E;
-  font-weight: bold;
-  font-family: arial;
-   
+    color: #34495E;
+    font-weight: bold;
+    font-family: arial;
 }
 
 .registerbtn {
-  background-color:#707B7C;
-  color: #D0D3D4;
-  font-family: arial;
-  font-size: 20px;
-  padding: 10px ;
-  margin:5px 0px ;
-  border: none;
-  cursor: pointer;
-  width: 45%;
-  
-}
-.registerbtn:hover{
-  background-color:#34495E;
-    color:#F7F9F9;
+    background-color: #707B7C;
+    color: #D0D3D4;
+    font-family: arial;
+    font-size: 20px;
+    padding: 10px;
+    margin: 5px 0px;
+    border: none;
+    cursor: pointer;
+    width: 45%;
 }
 
-footer{
-  display: flex;
-  justify-content:center;
-  background:#34495E;
-  width: 100%;
-  text-align: center;
-  color: #ECF0F;
-  font-weight: bold;
-  font-family:arial;
-  height: 50px;
+.registerbtn:hover {
+    background-color: #34495E;
+    color: #F7F9F9;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background: #34495E;
+    width: 100%;
+    text-align: center;
+    color: #ECF0F1;
+    font-weight: bold;
+    font-family: arial;
+    height: 50px;
 }
